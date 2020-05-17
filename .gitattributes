@@ -1,0 +1,4 @@
+Sample.ogv filter=lfs diff=lfs merge=lfs -text
+*Sample.ogv filter=lfs diff=lfs merge=lfs -text
+*.ogv filter=lfs diff=lfs merge=lfs -text
+.ogv filter=lfs diff=lfs merge=lfs -text

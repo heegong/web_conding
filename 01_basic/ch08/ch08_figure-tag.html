@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>figure 태그</title>
+    <!--
+        # figure 태그
+            - 본문 내용 안에 첨부자료(사진, 그래프)를 표시하면서 설명글을 작성하기 위한 태그 입니다.
+
+        # figcaption 태그
+            - figure 요소안에 제목을 붙일 때 사용합니다.
+            - figure 안에 하나만 사용 할 수 있습니다.
+                > 처음 or 마지막
+    -->
+</head>
+<body>
+    <h1>이미지에 제목 사용</h1>
+    <br>
+    <h3>하나의 이미지</h3>
+    <figure>                                                                                <!--첨부자료를 쓰기위함-->
+        <img src="../img/html5.jpg" title="w3sc">
+        <figcaption>[그림1] HTML5</figcaption>
+    </figure>
+
+    <figure>
+        <img src="../img/라이언_생각.png" widht="100px" height="100px" title="라이언 생각 이미지" alt="바부">
+        <img src="../img/라이언_후드.png" widht="100px" height="100px" title="라이언 생각 이미지" alt="바부">
+        <img src="../img/라이언_장미.png" widht="100px" height="100px" title="라이언 생각 이미지" alt="바부">
+        <figcaption>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp(라이언 이미지 모음)</figcaption>
+    </figure>
+</body>
+</html>

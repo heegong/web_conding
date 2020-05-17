@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>map태그</title>
+    <!--
+        # 이미지 맵
+            - 이미지 맵은 하나의 이미지에 여러개의 링크를 걸때 사용합니다.
+        
+        # 속성
+            - img 태그
+                <img src="" usemap="">
+                    > usemap : 이미지에 map을 사용 할 거라고 브라우저에게 알려줍니다.
+                                    적용하는 map의 이름을 작성합니다
+            
+            - map 태그
+                <mpa name=""></map>
+                    > name : map 태그에게 붙이는 이름
+
+            - area 태그
+                <area shape="" coords="" alt="" title="" href="">
+                    > shape : 링크를 걸어주는 영역의 모양
+                            default(기본값, 이미지 전체), rect, circle, poly
+                        coords : map 좌표
+                        alt       : 이미지를 대신하는 설명
+                        href     : 이동하는 link
+
+        # coords
+            - rect(사각형)
+               : x1,y1,x2,y2 - 사각형이 두 꼭지점 위치(왼쪽 위, 오른쪽 위)
+            - circle(원형)
+               : x,y,radius   - 원의 중심 좌표, 원의 반지름
+            -poly(다각형)
+               : x1,y1,x2,y2,........ xn,yn  - 3개 이상의 좌표
+            - 좌표는 Windows 의 그림판을 이용해서 구합니다
+
+    -->
+</head>
+<body>
+    <h1>map 태그</h1>
+    <img src="../img/html_css_js.png" usemap="#001">
+    <map name="001">
+        <area shape="circle" coords="49,74,45" href="" target="_blank">
+        <area shape="rect" coords="137,28,220,130" href="" target="_blank">
+        <area shape="poly" coords="260,27,356,27,125" href="" target="_blank"> 
+    </map>
+</body>
+</html>

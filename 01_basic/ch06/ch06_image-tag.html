@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image 태그</title>
+    <!--
+        #img 태그
+            - 웹페이지에서 이미지를 표시 할 때 사용
+        
+        #img 속성
+            - src : 이미지 파일이 저장된 경로 지정
+            - alt : 이미지 웹브라우저에 표시하지 못했을 경우에 표시되는 대체 텍스트 지정
+            - title : 이미지에 대해서 설명
+            - width/hight : 이미지의 가로, 세로 길이를 픽셀 단위로 지정
+            - style : 이미지의 스타일(위치 등)을 지정
+            - border : 이미지 경계선의 두께 지정
+
+        
+        #가상 이미지
+            - 레이아웃 설계단계나, 이미지가 아직 확정되지 않았거나 미완성인 경우에 가상이미지를 표시 할 때 사용합니다.
+                <img src="https://placehold.it/가로x세로">
+    -->
+</head>
+<body>
+    <h1>이미지 태그</h1>
+    <br>
+    <h3>이미지 태그 기본 사용</h3>
+    <img src="img/유재석.jpg" alt="빡대가리양야ㅑ야야ㅑㅇ">
+    <h3>이미지 설명, 오른쪽 정렬</h3>
+    <img src="img/html5.jpg" title="html5 로고 이미지" style="float: right" alt="빡대가리양야ㅑ야야ㅑㅇ"> <!-- 스타일 속성-->
+    <img src="img/html5.jpg" title="html5 로고 이미지" width="300" height="200" alt="빡대가리양야ㅑ야야ㅑㅇ">
+    <img src="img/html5.jpg" title="html5 로고 이미지" width="300" height="40%" alt="빡대가리양야ㅑ야야ㅑㅇ">
+    <img src="img/html5.jpg" title="html5 로고 이미지" width="300" height="40%"  border="100" alt="빡대가리양야ㅑ야야ㅑㅇ">
+    <br>
+    <h3>가상 이미지</h3>
+    <img src="https://placehold.it/500x400" alt="빡대가리">
+</body>
+</html>
