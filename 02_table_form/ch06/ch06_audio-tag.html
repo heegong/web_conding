@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>audio tag</title>
+    <!--
+        # audio tag
+            - 웹페이지에 오디오 파일을 재생 할 때 사용
+            - mp3,ogg,wav
+            - source 요소를 사용하면 브라우저에서 선택 할 수 있는 대체 오디오 파일을 지정할 수 있습니다
+            - 속성
+                > src : 재생하려는 오디오 파일이 저장된 경로 지정
+                > preload : 음악을 재생하기 전에 파일을 모두 다운하고 재생 할 지를 결정
+                > controls : 음악 재생 도구를 표시 할 지를 결정
+                > loop : 음악을 반복 재생 할 지를 결정
+                > autoplay : 음악을 자동 재생 할 지를 결정
+    -->
+</head>
+<body>
+    <h3>수동 재생</h3>
+    <audio src="../../01_basic/media/chicken.mp3" type="audio/mp3" controls></audio>
+    <br>
+    <audio src="../../01_basic/media/chicken.mp3" type="audio/mp3" controls autoplay loop></audio>
+    <br>
+    <h3>브라우저 선택 재생</h3>
+    <audio controls autoplay>
+        <source src="../../01_basic/media/Kalimba.ogg" type="audio/ogg">
+        <source src="../../01_basic/media/Kalimba.mp3" type="audio/mp3">
+    </audio>
+</body>
+</html>

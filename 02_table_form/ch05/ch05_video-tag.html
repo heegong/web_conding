@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video tag</title>
+    <!--
+        # video 태그
+            - 웹페이지에서 영상을 재생 할 때 사용되는 태그
+            - mp4,webm,ogg 파일을 권장합니다
+            - source 요소를 사용하면 브라우저에서 선택 할 수 있는 대체 비디오 파일 지정 할 수 있습니다.
+            - 속성
+                > src : 경로 지정
+                > preload : 비디오 파일을 재생하기 전에 파일을 모두 다운하고 재생 할지를 결정
+                > poster : 비디오를 준비 중일때 표시 할 이미지 파일 경로 지정
+                > autoplay : 비디오 자동 재생 여부 결정
+                > loop : 비디오 반복 재생 여부 결정
+                > controls : 비디오 재생 도구의 표시 여부 지정
+                > width, height : 비디오 크기 지정
+    -->
+</head>
+<body>
+    <h1>video tag</h1>
+    <br>
+    <h3>수동 재생</h3>
+    <video src="../../01_basic/media/Sample.mp4" width="400px" height="300px" controls></video>
+    <video src="../../01_basic/media/Sample.mp4" width="400px" height="300px" type="video/mp4" controls loop autoplay></video>
+
+    <h3>브라우저 선택 재생</h3>
+    <video width="400px" height="300px" controls preload="auto" poster="https://placehold.it/400x300">
+        <source src="../../01_basic/media/Sample.mp4" type="video/mp4">
+            <source src="../../01_basic/media/Sample.ogv" type="video/ogv">
+    </video>
+</body>
+</html>
