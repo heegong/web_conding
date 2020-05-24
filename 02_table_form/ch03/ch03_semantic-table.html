@@ -14,6 +14,41 @@
     -->
 </head>
 <body>
-    
+    <style>                             /*내가 할줄 모르는 css*/
+        .mytable { border-collapse:collapse; }  
+        .mytable th, .mytable td { border:1px solid black; }
+    </style>
+    <h1>시멘틱 테이블</h1>
+    <br>
+    <table class="mytable">
+        <caption>시멘틱 테이블 요소</caption>
+        <thead>
+            <tr>
+                <th>태그 명칭</th>
+                <th>설명</th>
+                <th>사용 여부</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>thead</td>
+                <td>표 머리말 그룹 태그</td>
+                <td>가능</td>
+            </tr>
+            <tr>
+                <td>tbody</td>
+                <td>표 본문 그룹 태그</td>
+                <td>가능</td>
+            </tr>
+            <tr>
+                <td>tfoot</td>
+                <td>표 꼬리말 그룹 태그</td>
+                <td>가능</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td colspan="3">참고 사이트 - <a href="https://www.w3.org" target="_blank">https://www.w3.org</a></td>
+        </tfoot>
+    </table>
 </body>
 </html>
