@@ -5,10 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>table colgroup 태그</title>
     <!--
-        
+        # colgroup 태그
+            - 표의 하나 이상의 열을 그룹으로 지정 할 때 사용한다.
+            - colgroup 태그는 caption 태그 다음에 위치
+
+        # col 태그
+            - table 태그안의 열의 속성을 지정하는 colgroup 태그의 요소다.
+            - 열싀 수와 col 태그를 사용하는 수는 일치해야 한다. 
     -->
 </head>
 <body>
-    
+    <h1>colgroup, col 태그</h1>
+    <br>
+    <table border="1">
+        <caption>예제 A</caption>
+        <colgroup>                                                    <!-- 하나의 열마다 적용-->
+            <col style="background-color:cyan;">        <!-- css인데 #으로 rgb로 쓸수도 있음-->
+            <col style="background-color: #111111;">
+            <col>
+        </colgroup>
+        <tr>
+            <td>1행 1열</td>
+            <td>1행 2열</td>
+            <td>1행 3열</td>
+        </tr>
+        <tr>
+            <td>2행 1열</td>
+            <td>2행 2열</td>
+            <td>2행 3열</td>
+        </tr>
+    </table> 
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <table border="1">
+        <caption>예제 B</caption>
+        <colgroup>
+            <col style="background-color: blueviolet;">
+            <col style="background-color: indigo;" span="2">    <!-- span은 한번의 지정해주는것-->
+            <!-- <col style="background-color: gold;"> -->
+        </colgroup>
+        <thead>
+            <tr style="background-color:  #D1B2FF;">
+                <td>1행 1열</td>
+                <td>1행 2열</td>
+                <td>1행 3열</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2행 1열</td>
+                <td>2행 2열</td>
+                <td>2행 3열</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>3행 1열</td>
+                <td>3행 2열</td>
+                <td>3행 3열</td>
+            </tr>
+        </tfoot>
+    </table>
 </body>
 </html>
