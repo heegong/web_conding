@@ -4,10 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>quiz 셀 병합</title>
+    <style>                                /* 내가 할줄 모르는 css*/
+        th, td{padding:7px;}
+    </style>
 </head>
 <body>
+    <style>                             /*내가 할줄 모르는 css*/
+        .mytable { border-collapse:collapse; }  
+        .mytable th, .mytable td { border:1px solid black; }
+    </style>
     <!-- img 폴더의 table_일기예보 파일의 내용을 구현-->
-    <table border="1">
+    <h3>일기예보</h3>
+    <table class="mytable">
         <tr>
             <th rowspan="2">지역</th>
             <th colspan="2">27일(목)</th>
