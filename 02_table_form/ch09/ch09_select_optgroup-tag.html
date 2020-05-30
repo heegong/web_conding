@@ -12,9 +12,46 @@
         
         # option tag
             - select 태그 안의 목록을 생성합니다
+        
+        # optgroup tag
+            - option 태그를 그룹화 합니다
     -->
 </head>
 <body>
-    
+    <h1>select tag</h1>
+    <br>
+    <form action="#">
+        <fieldset>
+            <legend>select</legend>
+            <select name="cars" id="carlist" size="3" multiple>
+                <option value="bmw">BMW</option>
+                <option value="audi">AUDI</option>
+                <option value="benz">BENZ</option>
+                <option value="hyundai">HYUNDAI</option>
+                <option value="kia">KIA</option>
+            </select>
+            <p><input type="submit" value="submit"></p>
+            <p>size 속성을 사용하면 표시되는 목록의 수를 지정 할 수 있습니다</p>
+            <p>multiple 속성을 사용하면 여러개의 항목 선택이 가능합니다</p>
+        </fieldset>
+    </form>
+
+    <form action="#">
+        <fieldset>
+            <legend>optgroup</legend>
+            <select name="cars-2" id="carlist-2">
+                <optgroup label="german-car">
+                    <option value="bmw">BMW</option>
+                    <option value="audi">AUDI</option>
+                    <option value="benz">BENZ</option>
+                </optgroup>
+                <optgroup label="korean-car">
+                    <option value="hyundai">HYUNDAI</option>
+                    <option value="kia">KIA</option>
+                </optgroup>
+                <p><input type="submit" value="submit"></p>
+            </select>
+        </fieldset>
+    </form>
 </body>
 </html>
