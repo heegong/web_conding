@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>quiz table form</title>
+    </head>
+    <body>
+        <!-- img폴더의 기본회원정보 파일의 내용을 구현하세요-->
+        <table border="1">
+            <colgroup>
+                <col style="background-color: aqua;">
+            </colgroup>
+            <tr>
+            <th>* 한글 이름</th>
+            <td><input type="text"> 반드시 실명을 입력해 주시기 바랍니다.</td>
+        </tr>
+        
+        <tr>
+            <th>* 영문 이름</th>
+            <td><input type="text"> 여권에 등록된 영문이름과 동일하게 작성해 주세요.</td>
+        </tr>
+        
+        <tr>
+            <th>* 회원 ID</th>
+            <td><input type="userid"><button type="submit">중복검사</button></td>
+        </tr>
+        <tr>
+            <th>* 회원 비밀번호</th>
+            <td><input type="password" max="12">영문, 숫자 조합으로 6~ 12자</td>
+        </tr>
+        <tr>
+            <th>* 비밀번호 확인</th>
+            <td><input type="password" max="12"></td>
+        </tr>
+        <tr>
+            <th>신청자 E-Mail</th>
+            <td><input type="text">@<input type="text">
+                <select>
+                    <option value="직접">직접입력</option>
+                    <option value="네이버">naver.com</option>
+                    <option value="구글">google.com</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th>* 우편 번호</th>
+            <td><input type="text"><button type="button">제출</button></td>
+        </tr>
+        <tr>
+            <th>* 주소</th>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <th>* 영문 주소</th>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <th>* 신청자 전화번호</th>
+            <td><input type="tel">허위 기재시 긴급 공지사항 등을 전달 할 수 없습니다.</td>
+        </tr>
+        <tr>
+            <th>* 이메일 수신여부</th>
+            <td><input type="radio"> 동의 <input type="radio"> 거부 | 약관변경 및 공지서 메일은 수신거부 회원에게도 발송됩니다.</td>
+        </tr>
+    </table>
+</body>
+</html>
