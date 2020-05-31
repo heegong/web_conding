@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background-repeat</title>
+    <!--
+        # background-repeat 속성
+            - no-repeat     -> 배경이미지를 한번만 적용
+            - repeat-x       -> 배경이미지를 가로 방향으로 반복 적용
+            - repeat-y       -> 배경이미지를 세로 방향으로 반복 적용
+    -->
+    <style>
+        #Norepeat{
+            height: 200px;
+            background-image: url("../../01_basic/bg_image/flower_bee.jpg");
+            background-repeat: no-repeat;
+        }
+        #RepeatX{
+            height: 200px;
+            background-image: url("../../01_basic/bg_image/narrow_bg.png");
+            background-repeat: repeat-x;
+        }
+    </style>
+</head>
+<body>
+    <h1>배경이미지 반복 설정</h1>
+    <br>
+    <section id="Norepeat">
+        <p><img src="../../01_basic/bg_image/banner.png" alt="ㅎㅎ"></p>
+    </section>
+    <section id="RepeatX">
+        <p><img src="../../01_basic/bg_image/bombit_logo.png" alt="ㅎㅎ"></p>
+    </section>
+</body>
+</html>

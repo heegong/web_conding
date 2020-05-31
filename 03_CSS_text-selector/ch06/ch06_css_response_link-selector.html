@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>response, link selector</title>
+    <!--
+        # 반응 선택자
+            - 사용자가 마우스를 특정한 태그 위에 올리면 hover 상태가 적용되고, 클릭하면 active 상태가 적용
+
+        # a 태그의 link 상태
+            - :link         -> 사용자가 한번도 해당 링크를 이용해서 연결된 페이지를 방문하지 않은 상태입니다
+            - :hover      -> 사용자의 마우스 커서가 링크 위에 올라가 있는 상태입니다
+            - :visited     -> 사용자가 한번이라도 링크를 이용해서 연결된 페이지를 방문한 상태입니다
+            - :active      -> 사용자가 마우스로 링크를 클릭하고 있는 상태입니다
+    -->
+    <style>
+        #click:active{
+            color:blue;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        #touch:hover{
+            color: red;
+            font-size: 20px;
+            font-style: italic;
+        }
+
+        #aLink a:link{
+            color: aquamarine;
+            background-color: black;
+        }
+        #aHover a:hover{
+            color:red;
+            background-color: blue;
+        }
+        #aVisited a:visited{
+            color:brown;
+            background-color: black;
+        }
+        #aActive a:active{
+            color:orange;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>반응 선택자</h1>
+    <br>
+    <p id="click">마우스로 클릭하세요</p>
+    <br>
+    <p id="touch">마우스를 올려보세요</p>
+    <br>
+
+    <h1>a태그 링크 상태</h1>
+    <br>
+    <p id="aLink"><a href="#">link</a></p>
+    <p id="aHover"><a href="#">hover</a></p>
+    <p id="aVisited"><a href="#">visited</a></p>
+    <p id="aActive"><a href="#">active</a></p>
+</body>
+</html>

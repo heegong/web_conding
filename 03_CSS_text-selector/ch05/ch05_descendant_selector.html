@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>descendant selector</title>
+    <!--
+        # 후손 선택자
+            - 특정한 태그 아래에 있는 후손을 선택 할 때 사용하는 선택자
+        
+        # 자손 선택자
+            - 특정한 태그 아래에 있는 자손을 선택 할 때 사용하는 선택자
+    -->
+    <style>
+        #motor-kor h3{
+            color : blue;
+        }
+        #motor-for h3{
+            color : red;
+        }
+        #motor-kor h3, #motor-for h3{
+            font-family: "맑은 고딕";
+            font-style: italic;
+        }
+
+        /*id 속성값으로 drink를 가지는 태그의 자손 위치에 있는 h3태그에 적용*/
+        #drink > h3{
+            color:salmon;
+        }
+
+        #drink > ul > li{
+            color : chocolate;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <h1>후손 선택자</h1>
+    <section id="motor-kor">
+        <h3>자동차 브랜드(한국)</h3>
+        <ul>
+            <li>HYUNDAI</li>
+            <li>KIA</li>
+        </ul>
+    </section>
+    
+    <section id="motor-for">
+        <h3>자동차 브랜드(외국)</h3>
+        <ul>
+            <li>BENZ</li>
+            <li>AUDI</li>
+            <li>BMW</li>
+        </ul>
+    </section>
+
+
+
+    <section id="drink">
+        <h3>음료</h3>
+        <ul>
+            <li>커피</li>
+            <li>오렌지 주스</li>
+            <li>아이스 티</li>
+        </ul>
+    </section>
+</body>
+</html>

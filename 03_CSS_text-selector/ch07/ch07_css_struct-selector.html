@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>struct selector</title>
+    <!--
+        # 구조 선택자
+            - 구조체 따라 특정 위치에 속하는 태그를 선택합니다
+            - :first-child  -> 형제 관계 중에서 첫번째에 위치하는 태그를 선택
+            - :last-child   -> 형제 관계 중에서 마지막에 위치하는 태그를 선택
+            - :nth-child(수열) -> 형제 관계 중에서 앞에서 수열번째의 태그를 선택
+    -->
+    <style>
+        #side-menu{
+            width: 300px;
+            height: 500px;
+        }
+        ul li:nth-child(2n) {background-color: orange;}
+        ul li:nth-child(2n+1) {background-color: yellow;}
+        ul li:first-child{background-color: red;}
+        ul li:last-child {background-color: blue;}
+    </style>
+</head>
+<body>
+    <h1>구조 선택자</h1>
+    <br>
+    <aside id="side-menu">
+        <ul>
+            <li>메뉴 1</li>
+            <li>메뉴 2</li>
+            <li>메뉴 3</li>
+            <li>메뉴 4</li>
+            <li>메뉴 5</li>
+        </ul>
+    </aside>
+</body>
+</html>
