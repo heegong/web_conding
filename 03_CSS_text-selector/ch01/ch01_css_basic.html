@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css</title>
+    <!--
+        # css ( Cascading Style sheets)
+            - 웹페이지에서 html 태그를 보조하여 웹페이지를 꾸며줍니다.
+
+        # css 기본 구조
+            Ex)      p        { color    :    blue; }
+                   선택자       속성           값
+            - 선택자 : css를 적용 할 영역 선택
+            - css 명령의 뒤에는 ';'을 작성합니다
+            - <head> 태그 안에 <style> 태그로 정의하고, css 설정값이 <body> 태그 안에 적용됩니다
+
+    -->
+    <!-- 외부 스타일 시트-->
+    <link rel="stylesheet" href="ch01_css_basic.css" type="text/css">
+    <!-- 내부 스타일 시트-->
+    <style>
+        h3{
+            color:brown;
+            font-size:20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: deepskyblue; font-size: 30px;">안녕!</h1>
+    <br>
+    <h3>내부 스타일 시트</h3>
+    <br>
+    <p>외부 스타일 시트</p>
+</body>
+</html>
