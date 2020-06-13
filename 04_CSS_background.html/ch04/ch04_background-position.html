@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background-position        배경이미지 위치 설정</title>
+    <style>
+        /*
+        background-position 속성값
+            - left,right,center,top,,bottom
+                ex> 100px 50px  -> 가로로 100px, 세로로 50px 떨어진 곳에 배치
+        */
+
+        
+        body{
+            border : 2px solid red;
+            width: 500px;
+            height: 500px;
+            background-image: url("../../01_basic/bg_image/rose.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        #img-position p{
+            text-align:  center;
+        }
+    </style>
+</head>
+<body>
+    <h1>배경이미지 위치</h1>
+    <br>
+    <section id="img-position">
+        <p><img src="../../01_basic/bg_image/rose.jpg" alt="zzzz"></p>
+    </section>
+    
+</body>
+</html>

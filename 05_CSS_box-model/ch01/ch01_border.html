@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border</title>
+    <style>
+        /*
+        border 속성, 값
+            - 경계선을 그릴 때 사용합니다
+                > border                    -> 1px solid #ff0000 : 박스에 1px 두께의 빨간색 실선 그리기
+                   border-top              -> 1px dotted #ff0000 : 박스 상단에 1px 두께의 점선 그리기
+                   border-bottom         -> 1px double #ff0000 : 박스 하단에 1px 두께의 중 실선 그리기
+        */
+        p{width: 500px;}
+        #border-A{border: 1px solid blue;}
+        #border-B{border: 2px dotted red;}
+        #border-C{border: 3px double green;}
+        #border-D{border-top: 3px dashed orange; border-bottom: 3px dashed orchid;}
+        #login-box{
+            width: 200px; height: 100px;
+            text-align: center;
+            background: #eaeaea;
+            border: 1px solid #bdbbbb;
+            border-radius: 10px; 
+            box-shadow: 3px 3px 3px #5d5d5d;
+        }
+    </style>
+</head>
+<body>
+    <h1>경계선 그리기</h1>
+    <br>
+    <p id="border-A">즐거운 주말</p>
+    <p id="border-B">즐거운 주말</p>
+    <p id="border-C">즐거운 주말</p>
+    <p id="border-D">즐거운 주말</p>
+    <br>
+    <aside id="login-box">
+        로그인 화면
+    </aside>
+</body>
+</html>
