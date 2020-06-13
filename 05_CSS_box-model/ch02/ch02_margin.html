@@ -4,6 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>margin</title>
+    <style>
+        /* margin : 요소의 네방향 바깥 여백을 설정합니다.*/
+        #margin-A{border: 3px solid black;}
+
+        #margin-B{
+            width : 500px;
+            border: 2px solid red;
+            margin : 30px;
+        }
+
+        #margin-C{
+            width : 500px;
+            border: 2px solid blue;
+            margin : 50px 30px;
+        }
+
+        #margin-D{
+            width : 500px;
+            border: 2px solid green;
+            margin : 30px auto;
+        }
+    </style>
 </head>
 <body>
     <h1>margin</h1>
@@ -12,6 +34,6 @@
     <p id="margin-B">margin 설정 - 박스 상,하,좌,우 30px</p>
     <p id="margin-C">margin 설정 - 박스 상하 50px, 좌우 30px</p>
     <p id="margin-D">margin 설정 - 박스 상하 30px, 좌우 브라우저에 맞게</p>
-    <p id="margin-E">margin 설정 - 박스 상,하,좌,우 브라우저에 맞게</p>
+    <p id="margin-A">margin 설정</p>
 </body>
 </html>

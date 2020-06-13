@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inline,block</title>
+    <!--
+        #인라인 요소
+            - 줄을 차지하지 않는 요소 입니다
+              화면에 표시되는 컨텐츠 영역 만큼만 차지하고, 나머지 공간에는 다른 요소가 올수있습니다
+              한줄에 여러개의 인라인 요소를 표시하는 것이 가능합니다
+            - 요소의 크기를 설정 할 수 없으며 수평 방향으로 표시됩니다
+            - span, a, img, input, select, textarea 등
+
+        # 블록 요소
+            - 혼자서 한줄을 차지하는 요소입니다
+            - width, height 속성으로 크기를 설정 할 수 있으며 한줄에 하나씩 수직방향으로 표시됩니다
+            - div,h1~h6,p,ul,ol,li,form,dl,dt,dd 등
+    -->
+
+    <style>
+        .Inline{
+            border: 1px solid red;
+          display: inline;  
+        }
+        .Block{
+            width: 100px; height: 50px;
+            display: block;
+            border: 1px solid blue;
+            margin:20px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>인라인과 블록</h1>
+    <br>
+    <h3>인라인 요소</h3>
+    <span>텍스트 A</span>
+    <span>텍스트 B</span>
+    <img src="../../01_basic/box_image/image1.jpg" alt="">
+    <img src="../../01_basic/box_image/image1.jpg" alt="">
+    <br>
+    <div class="Inline">구역1</div>
+    <div class="Inline">구역2</div>
+    <div class="Inline">구역3</div>
+    <br>
+    <h3>블록 요소</h3>
+    <p>단락</p>
+    <div class="Block">컨첸츠 1</div>
+    <div class="Block">컨첸츠 2</div>
+    <div class="Block">컨첸츠 1</div>
+</body>
+</html>

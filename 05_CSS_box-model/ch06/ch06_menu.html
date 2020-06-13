@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메뉴</title>
+    <style>
+        *{margin:0; padding: 0;}
+        #vertical-menu a{
+            display: block;
+        }
+        ul{
+            list-style-type: none;
+        }
+        #horizontal-menu{
+            width:400px;
+            border: 1px solid orange;
+            padding: 10px;
+            margin: 20px 0 0 40px;
+            background-color: yellow;
+            text-align: center;
+        }
+        #horizontal-menu li{
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <h1>메뉴</h1>
+    <br>
+    <h3>수직 방향 메뉴</h3>
+    <aside id="vertical-menu">
+        <a href="https://www.naver.com" target="_blank">네이버</a>
+        <a href="https://www.daum.net" target="_blank">다음</a>
+        <a href="https://www.google.com" target="_blank">구글</a>
+    </aside>
+    <br>
+    <h3>수직 방향 메뉴</h3>
+    <nav>
+        <ul id="horizontal-menu">
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">제품소개</a></li>
+            <li><a href="#">고객센터</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table border</title>
+    <style>
+        table{border-collapse: collapse;}
+        table,td,th{border: solid 1px #000000;}
+        tr{
+            height: 40px;
+        }
+        #table-title{height: 30px;}
+        #col1{width:100px;}
+        #col2,#col3{width: 90px;}
+        #col4,#col5{width: 80px;}
+
+        .train-number{
+            background-color:  #ffd9fa;
+        }
+    </style>
+</head>
+<body>
+    <h3>kTX 열차표 예매</h3>
+    <br>
+    <table>
+        <tr id="table-title">
+            <th>열차번호</th>
+            <th>출발</th>
+            <th>도착</th>
+            <th>특실</th>[[]]
+            <th>일반실</th>
+            <th>소요시간</th>
+        </tr>
+        <tr>
+            <td id="col1"  class="train-number">175</td>
+            <td id="col2">서울<br>21:00</td>
+            <td id="col3">부산<br>23:44</td>
+            <td id="col4"><img src="../../table_image/full.png" alt="붕쉐쥬?"></td>
+            <td id="col5"><img src="../../table_image/full.png" alt="붕쉐쥬?"></td>
+            <td id="col6">02:44</td>
+        </tr>
+
+        <tr>
+            <td id="col1"  class="train-number">177</td>
+            <td id="col2">서울<br>22:00</td>
+            <td id="col3">부산<br>00:42</td>
+            <td id="col4"><img src="../../table_image/empty.png" alt="붕쉐"></td>
+            <td id="col5"><img src="../../table_image/empty.png" alt="붕쉐"></td>
+            <td id="col6">02:42</td>
+        </tr>
+    </table>
+</body>
+</html>
