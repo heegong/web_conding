@@ -1,0 +1,51 @@
+
+
+<!-- ch02_image-layout.html -->
+
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> image layout </title>
+    <style>
+        .items{
+            border: solid 1px #000000;
+            float: left;
+            margin: 5px;
+        }
+        .items img{
+            display: block;
+        }
+
+        .clear{
+            /*float속성 해제*/
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <h1> 이미지 레이아웃 </h1>
+    <br>
+    <div class="items">
+        <img src="../../layout_image/image1.jpg" alt="산악자전거 이미지">
+    </div>
+    <div class="items">
+        <img src="../../layout_image/image2.jpg" alt="비행기 이미지">
+    </div>
+    <div class="items">
+        <img src="../../layout_image/image3.jpg" alt="붕쉐">
+    </div>
+
+    <div class="clear"></div>
+
+    <div class="items">
+        <img src="../../layout_image/image4.jpg" alt="붕쉐">
+    </div>
+    <div class="items">
+        <img src="../../layout_image/image5.jpg" alt="붕쉐">
+    </div>
+    <div class="items">
+        <img src="../../layout_image/image6.jpg" alt="붕쉐">
+    </div>
+</body>
+</html>

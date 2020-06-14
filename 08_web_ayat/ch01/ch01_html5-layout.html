@@ -1,0 +1,57 @@
+
+
+<!-- ch01_html5-layout.html -->
+
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 웹페이지 레이아웃 </title>
+    <!-- 
+    header    : 페이지 상단에 주로 사용하며 로고나 메뉴등의 컨텐츠를 표시합니다
+    footer    : 페이지 하단에 주로 사용하며 저작권, 주소, 연락처 등을 표시합니다
+    main      : 페이지의 메인 컨텐츠를 표시합니다
+    nav       : 상단 메뉴, 메인 메뉴, 서브 메뉴와 같이 각종 메뉴를 표시합니다
+    section   : 페이지의 섹션에 사용합니다
+    article   : 독립적인 컨텐츠를 표시합니다
+    aside     : 페이지의 왼쪽 또는 오른쪽에 들어가는 컨텐츠로 메뉴나 배너 등을 표시합니다
+    figcaption :  figure 요소에 대한 캡션을 정의합니다
+    figure    : 사진, 코드목록 등과 같은 자체 포함된 컨텐츠를 표시합니다    
+     -->
+    <style>
+    .clear { clear: both;}
+    header {
+        width: 700px;  height: 100px;
+        border: solid 1px red;
+    }
+    nav {
+        width: 500px; 
+        border: solid 1px orange;
+        float: right;
+        margin: 50px 0 0 0;
+    }
+    section {
+        width: 700px; height: 300px;
+        border: solid 1px blue;
+        float: left;
+    }
+    footer {
+        width: 700px; height: 100px;
+        border: solid 1px green;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        상단 헤더
+        <nav> 네비게이션 메뉴 </nav>
+    </header>
+    <section>
+        메인 컨텐츠
+    </section>
+    <div class="clear"></div>
+    <footer>
+         하단 푸터
+    </footer>
+</body>
+</html>

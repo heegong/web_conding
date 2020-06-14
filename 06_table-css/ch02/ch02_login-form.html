@@ -1,0 +1,76 @@
+
+
+<!-- ch02_login-form.html -->
+
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 로그인 form </title>
+    <style>
+    * { margin: 0; padding: 0; }
+    ul { list-style-type: none;}
+    body { 
+        font-size: 12px;
+        color: 444444;
+    }
+    #login-box {
+        width: 210px; height: 120px;
+        border: solid 1px #BBBBBB;
+        border-radius: 15px;
+        margin: 10px 0 0 10px;
+        padding: 10px 0 0 15px;
+    }
+    h3 { margin-bottom: 10px;}
+    #login-box input { 
+        width: 100px; height: 20px;
+    }
+    #id-pass, #login-btn {
+        display: inline-block;
+        vertical-align: top;
+    }
+    #id-pass span {
+        display: inline-block;
+        width: 20px;
+    }
+    #pass { margin-top: 5px;}
+    #login-btn button {
+        margin-left: 5px;
+        padding: 11px;
+        border-radius: 5px;
+    }
+    #btns {
+        margin: 12px 0 0 0;
+        text-decoration: underline;
+    }
+    #btns li {
+        margin-left: 10px;
+        display: inline;
+    }
+    </style>
+</head>
+<body>
+    <h1> 로그인 </h1>
+    <br>
+    <form action="#">
+        <div id="login-box">
+            <h3>회원 로그인</h3>
+            <ul id="input-button">
+                <li id="id-pass">
+                    <ul>
+                        <li><span>ID</span><input type="text"></li><!-- id -->
+                        <li id="pass"><span>PW</span><input type="password"></li><!-- pw -->
+                    </ul>
+                </li><!-- id-pass -->
+                <li id="login-btn">
+                    <button>로그인</button>
+                </li>
+            </ul><!-- input-button -->
+            <ul id="btns">
+                <li>회원 가입</li>
+                <li>ID/PW 찾기</li>
+            </ul><!-- btns -->
+        </div><!-- login-box -->
+    </form>
+</body>
+</html>

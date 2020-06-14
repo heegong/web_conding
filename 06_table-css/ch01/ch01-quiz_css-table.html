@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>버스 운행 시간</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        tr,td,th{
+            width: 75px;
+            height: 32px;
+            text-align: center;
+            border: solid 1px #000000;
+        }
+        .tr_table1{
+            background-color: #afafaf;
+        }
+        .first_td{
+            background-color: #c386c5;
+            text-decoration: underline;
+            color: blue;
+        }
+        .other_td{
+            background-color: #c386c5;
+            color: red;
+            text-decoration: underline;
+        }
+        #start_td{
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h3>버스표 예매</h3><br>
+    <table>
+        <tr class="tr_table1">
+            <th>구분</th>
+            <th id="start_td">출발</th>
+            <th id="start_td">도착</th>
+            <th>출발시간</th>
+            <th>소요시간</th>
+        </tr>
+        <tr>
+            <td class="first_td">완행</td>
+            <td id="start_td">서울</td>
+            <td id="start_td">광주</td>
+            <td>09:00</td>
+            <td>03:00</td>
+        </tr>
+        <tr>
+            <td class="other_td">직행</td>
+            <td id="start_td">서울</td>
+            <td id="start_td">대구</td>
+            <td>10:00</td>
+            <td>03:30</td>
+        </tr>
+        <tr>
+            <td class="other_td">직행</td>
+            <td id="start_td">서울</td>
+            <td id="start_td">부산</td>
+            <td>11:00</td>
+            <td>04:10</td>
+        </tr>
+    </table>
+</body>
+</html>

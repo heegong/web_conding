@@ -1,0 +1,67 @@
+
+
+<!-- ch02_html5-layout.htm -->
+
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 웹페이지 레이아웃2 </title>
+    <style>
+    * { margin: 0 auto; }
+    .clear { clear: both; }
+    header {
+        border: solid 1px red;
+        width: 800px; height: 80px;
+        margin: 2px;
+    }   
+    aside {
+        border: solid 1px purple;
+        width: 176px; height: 396px;
+        float: left;
+        margin: 2px;
+        padding: 2px;
+    }
+    nav {
+        border: solid 1px orange;
+        height: 150px;
+        margin-bottom: 50px;
+        margin: 2px;
+    }
+    main {
+        border: solid 1px blue;
+        width: 614px; height: 400px;
+        float: left;
+        margin: 2px;
+    }
+    section {
+        border: solid 1px skyblue;
+        width: 500px; height: 150px;
+        margin: 5px;
+    }
+    footer {
+        border: solid 1px green;
+        width: 800px; height: 100px;
+        margin: 2px;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        header
+    </header>
+    <aside>
+        좌측
+        <nav> 메뉴 </nav>
+    </aside>
+    <main>
+        메인 컨텐츠
+        <section> 컨텐츠 A</section>
+        <section> 컨텐츠 B</section>
+    </main>
+    <div class="clear"></div>
+    <footer>
+        footer
+    </footer>
+</body>
+</html>
